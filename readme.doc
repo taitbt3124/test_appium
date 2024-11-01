@@ -1,0 +1,7 @@
+{
+  "platformName": "Android",
+  "appium:automationName": "uiautomator2",
+  "appium:deviceName": "CPH2121",
+  "appium:appActivity": "MainActivity",
+  "appium:appPackage": "com.vdsmart.eyeprosport"
+}
