@@ -1,7 +1,26 @@
 {
   "platformName": "Android",
   "appium:automationName": "uiautomator2",
+  "appium:deviceName": "LM-V409N",
+  "appium:appActivity": "MainActivity",
+  "appium:appPackage": "com.vdsmart.eyeprosport"
+}
+
+
+{
+  "platformName": "Android",
+  "appium:automationName": "uiautomator2",
   "appium:deviceName": "CPH2121",
   "appium:appActivity": "MainActivity",
   "appium:appPackage": "com.vdsmart.eyeprosport"
+}
+
+{
+  "platformName": "Android",
+  "appium:automationName": "uiautomator2",
+  "appium:deviceName": "LM-V409N",
+  "appium:appActivity": "MainActivity",
+  "appium:appPackage": "com.vdsmart.eyeprosport",
+  "noReset": "True" ,
+  "fullReset": "False"
 }

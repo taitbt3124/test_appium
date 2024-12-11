@@ -35,23 +35,22 @@ class FreeVideo(BaseTest):
     #     ex_video_agree ='//android.widget.TextView[@text="Tập luyện thường"]'
     #     quantity_video = 13
     #     description = "test_vie_class_5 "
-
     #     self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)
 
-    # def test_vie_class_7(self):
-    #     app_language = '//android.view.View/android.view.ViewGroup[2]'
-    #     ex_class_scroll_num = 2
-    #     ex_class = '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView'
-    #     ex_video_scroll_num = -1
-    #     ex_video = '//android.widget.TextView[@text="1. Khởi động"]'
-    #     ex_video_agree ='//android.widget.TextView[@text="Tập luyện thường"]'
-    #     quantity_video = 17
-    #     description = "test_vie_class_7"
-    #     self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)     
+    def test_vie_class_7(self):
+        app_language = '//android.view.View/android.view.ViewGroup[2]'
+        ex_class_scroll_num = 3
+        ex_class = '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView'
+        ex_video_scroll_num = -1
+        ex_video = '//android.widget.TextView[@text="1. Khởi động"]'
+        ex_video_agree ='//android.widget.TextView[@text="Tập luyện thường"]'
+        quantity_video = 17
+        description = "test_vie_class_7"
+        self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)     
     
     def test_vie_class_10(self):
         app_language = '//android.view.View/android.view.ViewGroup[2]'
-        ex_class_scroll_num = 2
+        ex_class_scroll_num = 3
         ex_class = '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView'
         ex_video_scroll_num = -1
         ex_video = '//android.widget.TextView[@text="1. Khởi động"]'
@@ -71,27 +70,27 @@ class FreeVideo(BaseTest):
     #     description = "test_us_class_5"
     #     self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)
 
-    # def test_us_class_7(self):
-    #     app_language = '//android.view.View/android.view.ViewGroup[1]'
-    #     ex_class_scroll_num = 2
-    #     ex_class = '//android.widget.TextView[@text="Class 7  (FREE): Yoga increases endurance and burns fat throughout the body"]'
-    #     ex_video_scroll_num = -1
-    #     ex_video = '//android.widget.TextView[@text="1. Warm up"]'
-    #     ex_video_agree ='//android.widget.TextView[@text="Practice with Video"]'
-    #     quantity_video = 17
-    #     description = "test_us_class_7"
-    #     self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)     
+    def test_us_class_7(self):
+        app_language = '//android.view.View/android.view.ViewGroup[1]'
+        ex_class_scroll_num = 3
+        ex_class = '//android.widget.TextView[@text="Class 7  (FREE): Yoga increases endurance and burns fat throughout the body"]'
+        ex_video_scroll_num = -1
+        ex_video = '//android.widget.TextView[@text="1. Warm up"]'
+        ex_video_agree ='//android.widget.TextView[@text="Practice with Video"]'
+        quantity_video = 17
+        description = "test_us_class_7"
+        self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)     
     
-    # def test_us_class_10(self):
-    #     app_language = '//android.view.View/android.view.ViewGroup[1]'
-    #     ex_class_scroll_num = 2
-    #     ex_class = '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView'
-    #     ex_video_scroll_num = -1
-    #     ex_video = '//android.widget.TextView[@text="1. Warm Up"]'
-    #     ex_video_agree ='//android.widget.TextView[@text="Practice with Video"]'
-    #     quantity_video = 16
-    #     description = "test_us_class_10"
-    #     self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)  
+    def test_us_class_10(self):
+        app_language = '//android.view.View/android.view.ViewGroup[1]'
+        ex_class_scroll_num = 3
+        ex_class = '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView'
+        ex_video_scroll_num = -1
+        ex_video = '//android.widget.TextView[@text="1. Warm Up"]'
+        ex_video_agree ='//android.widget.TextView[@text="Practice with Video"]'
+        quantity_video = 16
+        description = "test_us_class_10"
+        self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)  
 
     # def test_jp_class_5(self):
     #     app_language = '//android.view.View/android.view.ViewGroup[3]'
@@ -104,27 +103,27 @@ class FreeVideo(BaseTest):
     #     description = "test_jp_class_5"
     #     self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)
 
-    # def test_jp_class_7(self):
-    #     app_language = '//android.view.View/android.view.ViewGroup[3]'
-    #     ex_class_scroll_num = 2
-    #     ex_class = '//android.widget.TextView[@text="レッスン 7 (デモ): ヨガは持久力を高め、体全体の脂肪を燃焼します"]'
-    #     ex_video_scroll_num = -1
-    #     ex_video = '//android.widget.TextView[@text="1. 準備し始める"]'
-    #     ex_video_agree ='//android.widget.TextView[@text="ビデオで練習する"]'
-    #     quantity_video = 17
-    #     description = "test_jp_class_7"
-    #     self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)     
+    def test_jp_class_7(self):
+        app_language = '//android.view.View/android.view.ViewGroup[3]'
+        ex_class_scroll_num = 3
+        ex_class = '//android.widget.TextView[@text="レッスン 7 (デモ): ヨガは持久力を高め、体全体の脂肪を燃焼します"]'
+        ex_video_scroll_num = -1
+        ex_video = '//android.widget.TextView[@text="1. 準備し始める"]'
+        ex_video_agree ='//android.widget.TextView[@text="ビデオで練習する"]'
+        quantity_video = 17
+        description = "test_jp_class_7"
+        self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)     
     
-    # def test_jp_class_10(self):
-    #     app_language = '//android.view.View/android.view.ViewGroup[3]'
-    #     ex_class_scroll_num = 2
-    #     ex_class = '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView'
-    #     ex_video_scroll_num = -1
-    #     ex_video = '//android.widget.TextView[@text="1. ウォームアップ"]'
-    #     ex_video_agree ='//android.widget.TextView[@text="ビデオで練習する"]'
-    #     quantity_video = 16
-    #     description = "test_jp_class_10"
-    #     self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)  
+    def test_jp_class_10(self):
+        app_language = '//android.view.View/android.view.ViewGroup[3]'
+        ex_class_scroll_num = 3
+        ex_class = '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView'
+        ex_video_scroll_num = -1
+        ex_video = '//android.widget.TextView[@text="1. ウォームアップ"]'
+        ex_video_agree ='//android.widget.TextView[@text="ビデオで練習する"]'
+        quantity_video = 16
+        description = "test_jp_class_10"
+        self.common_step(app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description)  
 
 
     def common_step(self,app_language,ex_class_scroll_num, ex_class, ex_video_scroll_num, ex_video, ex_video_agree, quantity_video, description):
@@ -157,46 +156,6 @@ class FreeVideo(BaseTest):
         skip = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup')  
         skip.click()
         time.sleep(2)
-
-        # choose_introduction = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[5]/android.view.ViewGroup')  
-        # choose_introduction.click()
-        # time.sleep(5) 
-
-        # skip_introduce = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')  
-        # skip_introduce.click()
-        # time.sleep(1)   
- 
-
-        # choose_guide = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[6]/android.view.ViewGroup/android.view.ViewGroup')  
-        # choose_guide.click()
-        # time.sleep(5)   
-
-        # skip_guide = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')  
-        # skip_guide.click()
-        # time.sleep(1)   
-
-
-        # skip_ad = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.widget.ImageView\").instance(3)")
-        # skip_ad.click()
-        # time.sleep(1) 
-        
-        # choose_icon_chatbot = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(41)")
-        # choose_icon_chatbot.click()
-        # time.sleep(1) 
-
-        # test_question = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(27)")
-        # test_question.click()
-        # time.sleep(1) 
-
-
-        # check_screen = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(33)")
-        # check_screen.click()
-        # time.sleep(10) 
-  
-        # back = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(15)")
-        # back.click()
-        # time.sleep(1) 
-
 
         # ex_class scroll
         # ---------------
@@ -240,34 +199,33 @@ class FreeVideo(BaseTest):
         time.sleep(3)
         actions = ActionChains(self.driver)
         actions.w3c_actions = ActionBuilder(self.driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
-        actions.w3c_actions.pointer_action.move_to_location(1250, 547)
+        actions.w3c_actions.pointer_action.move_to_location(1225, 567)
+        actions.w3c_actions.pointer_action.pointer_down()
+        actions.w3c_actions.pointer_action.pause(0.1)
+        actions.w3c_actions.pointer_action.release()
+        actions.perform()
+        time.sleep(10)
+        
+        actions = ActionChains(self.driver)
+        actions.w3c_actions = ActionBuilder(self.driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
+        actions.w3c_actions.pointer_action.move_to_location(1225, 567)
+        actions.w3c_actions.pointer_action.pointer_down()
+        actions.w3c_actions.pointer_action.pause(0.1)
+        actions.w3c_actions.pointer_action.release()
+        actions.perform()
+
+        actions = ActionChains(self.driver)
+        actions.w3c_actions = ActionBuilder(self.driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
+        actions.w3c_actions.pointer_action.move_to_location(1225, 567)
         actions.w3c_actions.pointer_action.pointer_down()
         actions.w3c_actions.pointer_action.pause(0.1)
         actions.w3c_actions.pointer_action.release()
         actions.perform()
         time.sleep(3)
 
-
         actions = ActionChains(self.driver)
         actions.w3c_actions = ActionBuilder(self.driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
-        actions.w3c_actions.pointer_action.move_to_location(1250, 547)
-        actions.w3c_actions.pointer_action.pointer_down()
-        actions.w3c_actions.pointer_action.pause(0.1)
-        actions.w3c_actions.pointer_action.release()
-        actions.perform()
-        # try to merge 178-192
-        actions = ActionChains(self.driver)
-        actions.w3c_actions = ActionBuilder(self.driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
-        actions.w3c_actions.pointer_action.move_to_location(1250, 547)
-        actions.w3c_actions.pointer_action.pointer_down()
-        actions.w3c_actions.pointer_action.pause(0.1)
-        actions.w3c_actions.pointer_action.release()
-        actions.perform()
-
-        time.sleep(1)  
-        actions = ActionChains(self.driver)
-        actions.w3c_actions = ActionBuilder(self.driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
-        actions.w3c_actions.pointer_action.move_to_location(1963, 541)
+        actions.w3c_actions.pointer_action.move_to_location(1862, 545)
         actions.w3c_actions.pointer_action.pointer_down()
         actions.w3c_actions.pointer_action.pause(0.1)
         actions.w3c_actions.pointer_action.release()

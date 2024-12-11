@@ -83,6 +83,8 @@ class Login(BaseTest):
             success_element = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.LinearLayout[@resource-id="com.android.permissioncontroller:id/content_container"]/android.widget.LinearLayout')  # Replace with an actual ID of an element indicating success
             self.assertTrue(success_element.is_displayed())
             logger.info("Login test gmail success")
+            logger.info("-----------------------------------")
+
         except Exception as e:
             self.fail(f'Login test failed with exception: {e}')
             logger.error("Login test failed with exception:: %s", e)
@@ -123,6 +125,7 @@ class Login(BaseTest):
         try:
             success_element = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.LinearLayout[@resource-id="com.android.permissioncontroller:id/content_container"]/android.widget.LinearLayout')  # Replace with an actual ID of an element indicating success
             self.assertTrue(success_element.is_displayed())
+            logger.info("-------------Login test------------")
             logger.info("Login test with facebook success")
         except Exception as e:
             self.fail(f'Login test failed with exception: {e}')

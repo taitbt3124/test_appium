@@ -4,16 +4,17 @@ import time
 # import os
 # sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from tests.base_test import BaseTest
-# from appium import webdriver
-# from appium.webdriver.common.actionchains import ActionChains
-
+from appium import webdriver
+from appium.options.common.base import AppiumOptions
 from appium.webdriver.common.appiumby import AppiumBy
-import logging
 
+# For W3C actions
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.actions import interaction
 from selenium.webdriver.common.actions.action_builder import ActionBuilder
 from selenium.webdriver.common.actions.pointer_input import PointerInput
+
+import logging
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -23,8 +24,9 @@ from selenium.common.exceptions import NoSuchElementException
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-class TestChatBot(BaseTest):
-    def test_edit_time_route(self):
+class Video_route(BaseTest):
+
+    def test_video_in_route(self):
         time.sleep(15)
 
         try:
@@ -57,34 +59,47 @@ class TestChatBot(BaseTest):
 
         skip_alert_gps = self.driver.find_element(by=AppiumBy.ID, value='com.android.permissioncontroller:id/permission_deny_button')  
         skip_alert_gps.click()
-        time.sleep(3)
-
-        skip_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.view.ViewGroup[@resource-id="__CAROUSEL_ITEM_0_READY__"]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')
-        if skip_button.is_displayed():
-            skip_button.click()
-
-        click_chatbot = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.widget.ImageView\").instance(8)")
-        click_chatbot.click()
-        time.sleep(3)
-        print("1")
-
-
-        chat_now = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(39)")
-        chat_now.click()
-        time.sleep(5)
-        print("12")
-
-
-        choose_question = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup')
-        choose_question.click()
-        time.sleep(5)
-
-
+        time.sleep(10)
 
         try:
-            success_element = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]')  # Replace with an actual ID of an element indicating success
+            skip_ad = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(100)")
+            skip_ad.click()
+            time.sleep(5)
+        except NoSuchElementException:
+            # print("Không tìm thấy element skip ad")
+            time.sleep(5)
+
+
+        practice_now = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(50)")
+        practice_now.click()
+        time.sleep(10)
+
+        skip_take_picture = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().text(\"Bài 15 (Miễn phí) - YOGA chữa đau xương khớp\").instance(6)")
+        skip_take_picture.click()
+        time.sleep(3)
+
+        for _ in range(5): 
+            self.driver.find_element(
+                AppiumBy.ANDROID_UIAUTOMATOR,
+                'new UiScrollable(new UiSelector().scrollable(true)).scrollForward();'
+            )
+        time.sleep(3)
+
+        for _ in range(5): 
+            self.driver.find_element(
+                AppiumBy.ANDROID_UIAUTOMATOR,
+                'new UiScrollable(new UiSelector().scrollable(true)).scrollBackward();'
+            ) 
+        time.sleep(3)
+
+        try:
+            success_element = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]')  # Replace with an actual ID of an element indicating success
             self.assertTrue(success_element.is_displayed())
-            logger.info("Tese_change_time_done")
+            logger.info("-----------------------------------")
+            logger.info(" View workout schedule success")
+            logger.info("-----------------------------------")
+
         except Exception as e:
-            self.fail(f'Login test failed with exception: {e}')
-            logger.error("Login test failed with exception:: %s", e)
+            self.fail(f' Login test failed with exception: {e}')
+            logger.error(" Login test failed with exception:: %s", e)
+

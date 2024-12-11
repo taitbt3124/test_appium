@@ -193,113 +193,116 @@ class TestViewTraningRoute(BaseTest):
     #         logger.error("Login test failed with exception:: %s", e)
 
 
-    # def test_list_training_route(self):
-    #     # self.common_step()
-    #     time.sleep(15)
+    def test_list_training_route(self):
+        # self.common_step()
+        time.sleep(15)
 
-    #     try:
-    #         accept = self.driver.find_element(by=AppiumBy.ID, value='android:id/button1')
-    #         if accept.is_displayed():
-    #             accept.click()
-    #             time.sleep(3)
-    #     except NoSuchElementException:
-    #         print("Không tìm thấy element 'accept'. Tiếp tục thực hiện các bước tiếp theo.")
+        try:
+            accept = self.driver.find_element(by=AppiumBy.ID, value='android:id/button1')
+            if accept.is_displayed():
+                accept.click()
+                time.sleep(3)
+        except NoSuchElementException:
+            print("Không tìm thấy element 'accept'. Tiếp tục thực hiện các bước tiếp theo.")
 
-    #     agree_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')  
-    #     agree_button.click()
-    #     time.sleep(2)
+        agree_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')  
+        agree_button.click()
+        time.sleep(2)
 
-    #     language_choose = self.driver.find_element(by=AppiumBy.XPATH, value='//android.view.View/android.view.ViewGroup[2]')  
-    #     language_choose.click()
-    #     time.sleep(1)
+        language_choose = self.driver.find_element(by=AppiumBy.XPATH, value='//android.view.View/android.view.ViewGroup[2]')  
+        language_choose.click()
+        time.sleep(1)
 
-    #     agree_lang_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup')  
-    #     agree_lang_button.click()
-    #     time.sleep(5)
+        agree_lang_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup')  
+        agree_lang_button.click()
+        time.sleep(5)
 
-    #     skip_button = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(13)")  
-    #     skip_button.click()
-    #     time.sleep(3)
+        skip_button = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(13)")  
+        skip_button.click()
+        time.sleep(3)
 
-    #     login_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]')  
-    #     login_button.click()
-    #     time.sleep(10)
+        login_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]')  
+        login_button.click()
+        time.sleep(10)
 
-    #     skip_alert_gps = self.driver.find_element(by=AppiumBy.ID, value='com.android.permissioncontroller:id/permission_deny_button')  
-    #     skip_alert_gps.click()
-    #     time.sleep(10)
+        skip_alert_gps = self.driver.find_element(by=AppiumBy.ID, value='com.android.permissioncontroller:id/permission_deny_button')  
+        skip_alert_gps.click()
+        time.sleep(10)
 
-    #     try:
-    #         skip_ad = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(100)")
-    #         skip_ad.click()
-    #         time.sleep(5)
-    #     except NoSuchElementException:
-    #         print("Không tìm thấy element skip ad")
-    #         time.sleep(5)
-
-
-    #     # skip_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.view.ViewGroup[@resource-id="__CAROUSEL_ITEM_0_READY__"]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')
-    #     # skip_button.click()
-    #     # time.sleep(3)
-
-    #     # skip_take_picture = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().text(\"Bài 14: Suối nguồn tươi trẻ\").instance(6)")
-    #     # skip_take_picture.click()
-    #     # time.sleep(3)
-
-    #     practice_now = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(50)")
-    #     practice_now.click()
-    #     time.sleep(10)
-
-    #     # skip_take_a_photo = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value='new UiSelector().resourceId(\"progress-circle\").instance(13)')
-    #     # skip_take_a_photo.click()
-    #     # time.sleep(3)
-
-    #     skip_take_picture = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().text(\"Bài 14: Suối nguồn tươi trẻ\").instance(6)")
-    #     skip_take_picture.click()
-    #     time.sleep(3)
-
-    #     for _ in range(5): 
-    #         self.driver.find_element(
-    #             AppiumBy.ANDROID_UIAUTOMATOR,
-    #             'new UiScrollable(new UiSelector().scrollable(true)).scrollForward();'
-    #         )
-    #     time.sleep(3)
-
-    #     for _ in range(5): 
-    #         self.driver.find_element(
-    #             AppiumBy.ANDROID_UIAUTOMATOR,
-    #             'new UiScrollable(new UiSelector().scrollable(true)).scrollBackward();'
-    #         ) 
-    #     time.sleep(3)
-
-    #     # choose_old_class = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(58)")
-    #     # choose_old_class.click()
-    #     # time.sleep(3)
-
-    #     # skip_alert = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(87)")
-    #     # skip_alert.click()
-    #     # time.sleep(3)
-
-    #     # choose_video = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.widget.ImageView\").instance(1)")
-    #     # choose_video.click()
-    #     # time.sleep(1)
-
-    #     # exercise_normal = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().text(\"Tập luyện thường\")")
-    #     # exercise_normal.click()
-    #     # time.sleep(1)
+        try:
+            skip_ad = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(100)")
+            skip_ad.click()
+            time.sleep(5)
+        except NoSuchElementException:
+            # print("Không tìm thấy element skip ad")
+            time.sleep(5)
 
 
+        # skip_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.view.ViewGroup[@resource-id="__CAROUSEL_ITEM_0_READY__"]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')
+        # skip_button.click()
+        # time.sleep(3)
 
-    #     # for i in range(7):
-    #     #     self.repeat_video()  
+        # skip_take_picture = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().text(\"Bài 14: Suối nguồn tươi trẻ\").instance(6)")
+        # skip_take_picture.click()
+        # time.sleep(3)
 
-    #     try:
-    #         success_element = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]')  # Replace with an actual ID of an element indicating success
-    #         self.assertTrue(success_element.is_displayed())
-    #         logger.info("View workout schedule success")
-    #     except Exception as e:
-    #         self.fail(f'Login test failed with exception: {e}')
-    #         logger.error("Login test failed with exception:: %s", e)
+        practice_now = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(50)")
+        practice_now.click()
+        time.sleep(10)
+
+        # skip_take_a_photo = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value='new UiSelector().resourceId(\"progress-circle\").instance(13)')
+        # skip_take_a_photo.click()
+        # time.sleep(3)
+
+        skip_take_picture = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().text(\"Bài 15 (Miễn phí) - YOGA chữa đau xương khớp\").instance(6)")
+        skip_take_picture.click()
+        time.sleep(3)
+
+        for _ in range(5): 
+            self.driver.find_element(
+                AppiumBy.ANDROID_UIAUTOMATOR,
+                'new UiScrollable(new UiSelector().scrollable(true)).scrollForward();'
+            )
+        time.sleep(3)
+
+        for _ in range(5): 
+            self.driver.find_element(
+                AppiumBy.ANDROID_UIAUTOMATOR,
+                'new UiScrollable(new UiSelector().scrollable(true)).scrollBackward();'
+            ) 
+        time.sleep(3)
+
+        # choose_old_class = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(58)")
+        # choose_old_class.click()
+        # time.sleep(3)
+
+        # skip_alert = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(87)")
+        # skip_alert.click()
+        # time.sleep(3)
+
+        # choose_video = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.widget.ImageView\").instance(1)")
+        # choose_video.click()
+        # time.sleep(1)
+
+        # exercise_normal = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().text(\"Tập luyện thường\")")
+        # exercise_normal.click()
+        # time.sleep(1)
+
+
+
+        # for i in range(7):
+        #     self.repeat_video()  
+
+        try:
+            success_element = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]')  # Replace with an actual ID of an element indicating success
+            self.assertTrue(success_element.is_displayed())
+            logger.info("-----------------------------------")
+            logger.info(" View workout schedule success")
+            logger.info("-----------------------------------")
+
+        except Exception as e:
+            self.fail(f' Login test failed with exception: {e}')
+            logger.error(" Login test failed with exception:: %s", e)
 
 
     # def test_list_training_route_past_VIE(self):
@@ -338,94 +341,114 @@ class TestViewTraningRoute(BaseTest):
     #     self.common_step(app_language,skip_alert,video,result)
 
 
-    def test_edit_time_route(self):
-        time.sleep(15)
+    # def test_edit_time_route(self):
+    #     time.sleep(15)
 
-        try:
-            accept = self.driver.find_element(by=AppiumBy.ID, value='android:id/button1')
-            if accept.is_displayed():
-                accept.click()
-                time.sleep(3)
-        except NoSuchElementException:
-            print("Không tìm thấy element 'accept'. Tiếp tục thực hiện các bước tiếp theo.")
+    #     try:
+    #         accept = self.driver.find_element(by=AppiumBy.ID, value='android:id/button1')
+    #         if accept.is_displayed():
+    #             accept.click()
+    #             time.sleep(3)
+    #     except NoSuchElementException:
+    #         print("Không tìm thấy element 'accept'. Tiếp tục thực hiện các bước tiếp theo.")
 
 
-        agree_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')  
-        agree_button.click()
-        time.sleep(2)
+    #     agree_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')  
+    #     agree_button.click()
+    #     time.sleep(2)
 
-        language_choose = self.driver.find_element(by=AppiumBy.XPATH, value='//android.view.View/android.view.ViewGroup[2]')  
-        language_choose.click()
-        time.sleep(1)
+    #     language_choose = self.driver.find_element(by=AppiumBy.XPATH, value='//android.view.View/android.view.ViewGroup[2]')  
+    #     language_choose.click()
+    #     time.sleep(1)
 
-        agree_lang_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup')  
-        agree_lang_button.click()
-        time.sleep(5)
+    #     agree_lang_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup')  
+    #     agree_lang_button.click()
+    #     time.sleep(5)
 
-        skip_button = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(13)")  
-        skip_button.click()
-        time.sleep(3)
+    #     skip_button = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(13)")  
+    #     skip_button.click()
+    #     time.sleep(3)
 
-        login_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]')  
-        login_button.click()
-        time.sleep(10)
+    #     login_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]')  
+    #     login_button.click()
+    #     time.sleep(10)
+    #     try:
+    #         skip_alert_gps = self.driver.find_element(by=AppiumBy.ID, value='com.android.permissioncontroller:id/permission_deny_button')  
+    #         skip_alert_gps.click()
+    #         time.sleep(3)
+    #     except NoSuchElementException:
+    #         print("Không tìm thấy element skip ad")
+    #         time.sleep(5)
 
-        skip_alert_gps = self.driver.find_element(by=AppiumBy.ID, value='com.android.permissioncontroller:id/permission_deny_button')  
-        skip_alert_gps.click()
-        time.sleep(3)
+    #     try:
+    #         skip_ad = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(100)")
+    #         skip_ad.click()
+    #         time.sleep(5)
+    #     except NoSuchElementException:
+    #         print("Không tìm thấy element skip ad")
+    #         time.sleep(5)
 
-        try:
-            skip_ad = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(100)")
-            skip_ad.click()
-            time.sleep(5)
-        except NoSuchElementException:
-            print("Không tìm thấy element skip ad")
-            time.sleep(5)
+    #     # skip_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.view.ViewGroup[@resource-id="__CAROUSEL_ITEM_0_READY__"]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')
+    #     # skip_button.click()
+    #     # time.sleep(3)
 
-        skip_button = self.driver.find_element(by=AppiumBy.XPATH, value='//android.view.ViewGroup[@resource-id="__CAROUSEL_ITEM_0_READY__"]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')
-        skip_button.click()
+    #     try:
+    #         # Thử tìm phần tử bằng XPATH
+    #         skip_button = self.driver.find_element(AppiumBy.XPATH, '//android.view.ViewGroup[@resource-id="__CAROUSEL_ITEM_0_READY__"]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup')
+    #         skip_button.click()  # Nếu tìm thấy, thực hiện nhấn
+    #         time.sleep(3)
+    #         print("Element được tìm thấy và đã nhấn thành công.")
+    #     except NoSuchElementException:
+    #         # Nếu không tìm thấy phần tử
+    #         print("Không tìm thấy element 'skip_button'.")
 
-        practice_now = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(48)")
-        practice_now.click()
-        time.sleep(10)
 
-        skip_take_a_photo = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value='new UiSelector().resourceId(\"progress-circle\").instance(13)')
-        skip_take_a_photo.click()
-        time.sleep(3)
-        for _ in range(1): 
-            self.driver.find_element(
-                AppiumBy.ANDROID_UIAUTOMATOR,
-                'new UiScrollable(new UiSelector().scrollable(true)).scrollBackward();'
-            )
-        hide_chatbot_alert = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().text(\"Xin chào , bạn vẫn chưa hoàn thành lộ trình tập yoga của tuần này. Hãy tăng thời gian tập luyện lên ít nhất 15 phút mỗi buổi.\").instance(1)")
-        hide_chatbot_alert.click()
-        time.sleep(2)
+    #     practice_now = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(48)")
+    #     practice_now.click()
+    #     time.sleep(10)
+    #     # print("Không tìm thấy element 'practice_now'.")
 
-        edit_time = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(49)")
-        edit_time.click()
-        time.sleep(2)
 
-        choose_time = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(36)")
-        choose_time.click()
-        time.sleep(2)
+    #     # skip_take_a_photo = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value='new UiSelector().resourceId(\"progress-circle\").instance(13)')
+    #     # skip_take_a_photo.click()
+    #     # time.sleep(3)
+    #     # print("Không tìm thấy element 'skip_take_a_photo'.")
 
-        set_time = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(7)")
-        set_time.click()
-        time.sleep(5)
 
-        submit = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(45)")
-        submit.click()
-        time.sleep(5)
+    #     for _ in range(1): 
+    #         self.driver.find_element(
+    #             AppiumBy.ANDROID_UIAUTOMATOR,
+    #             'new UiScrollable(new UiSelector().scrollable(true)).scrollBackward();'
+    #         )
+    #     hide_chatbot_alert = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().text(\"Xin chào , bạn vẫn chưa hoàn thành lộ trình tập yoga của tuần này. Hãy tăng thời gian tập luyện lên ít nhất 15 phút mỗi buổi.\").instance(1)")
+    #     hide_chatbot_alert.click()
+    #     time.sleep(2)
+
+    #     edit_time = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(49)")
+    #     edit_time.click()
+    #     time.sleep(2)
+
+    #     choose_time = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(36)")
+    #     choose_time.click()
+    #     time.sleep(2)
+
+    #     set_time = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(7)")
+    #     set_time.click()
+    #     time.sleep(5)
+
+    #     submit = self.driver.find_element(by=AppiumBy.ANDROID_UIAUTOMATOR, value="new UiSelector().className(\"android.view.ViewGroup\").instance(45)")
+    #     submit.click()
+    #     time.sleep(5)
 
         
 
-        try:
-            success_element = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.TextView[@text="Cập nhật thời gian tập luyện thành công"]')  # Replace with an actual ID of an element indicating success
-            self.assertTrue(success_element.is_displayed())
-            logger.info("Tese_change_time_done")
-        except Exception as e:
-            self.fail(f'Login test failed with exception: {e}')
-            logger.error("Login test failed with exception:: %s", e)
+    #     try:
+    #         success_element = self.driver.find_element(by=AppiumBy.XPATH, value='//android.widget.TextView[@text="Cập nhật thời gian tập luyện thành công"]')  # Replace with an actual ID of an element indicating success
+    #         self.assertTrue(success_element.is_displayed())
+    #         logger.info("Tese_change_time_done")
+    #     except Exception as e:
+    #         self.fail(f'Login test failed with exception: {e}')
+    #         logger.error("Login test failed with exception:: %s", e)
 
 
     def common_step(self,app_language,skip_alert,video,result):
